@@ -28,6 +28,13 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'site' => [
+        'title' => 'Peruscape',
+        'description' => 'Landscapes of Peru'
+    ],
+
+    'social_urls' => ['facebook' => 'https://facebook.com', 'google' => 'https://google.com'],
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
