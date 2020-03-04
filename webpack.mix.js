@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss')
+require('laravel-mix-purgecss');
 
 
 mix.js('resources/assets/js/app.js', 'public/js')
@@ -11,7 +12,6 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 mix.browserSync('peruscape.test');
 
-
-if(mix.inProduction()) {
-    mix.version();
+if (mix.inProduction()) {
+    mix.purgeCss().version();
 }

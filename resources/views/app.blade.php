@@ -26,7 +26,7 @@
 </head>
 <body>
 <header id="app">
-    <header class="bg-gray-100 bg-no-repeat bg-left py-1" style="background-image: url(/images/bubbles.svg)">
+    <header class="bg-gray-100 bg-no-repeat bg-left py-1 shadow-lg" style="background-image: url(/images/bubbles.svg)">
         <div class="text-3xl text-center tracking-widest">
             Peruscape
         </div>
@@ -34,7 +34,7 @@
     <main style="min-height: 80vh">
         @yield('content')
     </main>
-    <footer class="flex items-center justify-center bg-gray-100 py-2">
+    <footer class="flex items-center justify-center bg-gray-100 py-2 shadow-xs">
         <div>
 
         </div>
