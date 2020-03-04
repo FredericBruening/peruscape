@@ -13,10 +13,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-          crossorigin="anonymous">
+
     <!-- Scripts -->
     <script>
         window.App = {!! json_encode([
@@ -28,39 +25,24 @@
     </script>
 </head>
 <body>
-<div id="app">
-    <div class="hero is-white is-bold">
-        <div class="hero-body is-paddingless is-centered">
-            <img src="{{ asset('/images/logo.png') }}"
-                 width="370"
-                 alt="Peruscape">
+<header id="app">
+    <header class="bg-gray-100 bg-no-repeat bg-left py-1" style="background-image: url(/images/bubbles.svg)">
+        <div class="text-3xl text-center tracking-widest">
+            Peruscape
         </div>
-    </div>
-    <div class="container">
+    </header>
+    <main style="min-height: 80vh">
         @yield('content')
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <div>
-                    {{--<a class="icon"--}}
-                    {{--:href="urls.google"--}}
-                    {{--v-if="urls.google">--}}
-                    {{--<i class="fa fa-google-plus"></i>--}}
-                    {{--</a>--}}
-                    {{--<a class="icon"--}}
-                    {{--:href="urls.facebook"--}}
-                    {{--v-if="urls.facebook">--}}
-                    {{--<i class="fa fa-facebook"></i>--}}
-                    {{--</a>--}}
-                </div>
-                <p>
-                    © Peruscape
-                </p>
-            </div>
+    </main>
+    <footer class="flex items-center justify-center bg-gray-100 py-2">
+        <div>
+
+        </div>
+        <div class="text-green-500 tracking-wider">
+            © Peruscape
         </div>
     </footer>
-</div>
+</header>
 
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
